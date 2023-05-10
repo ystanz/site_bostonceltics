@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header h1,
+section h1,
+section h3 {
+    font-family: 'Lobster', cursive;
+    font-weight: normal;
+}
+
+header h1 {
+    font-size: 48px;
+}
+
+section h1 {
+    font-size: 26px;
+}
+
+section h3 {
+    font-size: 24px;
+}
+
+header nav li,
+form button {
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: normal;
+}
+
+header nav li a {
+    font-size: 18px;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-image: url(https://cdn.celtics.com/evergreen/legacy/homepage/media/75th/75th-bg.jpg);
+}
+
+header {
+    padding: 16px 0;
+    background-color: rgb(0,131,72);
+    color:white;
+}
+
+header img {
+    height: 70px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    margin-left: 15px;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 24px;
+}
+
+header nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+.container { 
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container,
+section .container { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#about {
+    margin-top: -20px;
+}
+
+.tatum_largando_a_braba {
+    width: 640px;
+    margin-right: 32px;
+}
+
+.branchs_list img {
+    max-height: 30px;
+}
+
+.branchs_list li {
+    display: inline;
+    margin-right: 8px;
+}
+
+section .container {
+    align-items: flex-start;
+}
+
+section {
+    padding: 24px 0;
+}
+
+section h2 {
+    margin-top: 16px;
+}
+
+section {
+    color: rgb(0,131,72)
+}
+
+section p {
+    margin-bottom: 8px;
+}
+
+.social_links {
+    text-align: center;
+}
+
+.social_links img {
+    height: 24px;
+}
+
+.social_links li {
+    display: inline;
+    margin-right: 8px;
+}
+
+.social_links li a {
+    text-decoration: none;
+}
+
+#contact .container {
+    display: block;
+}
+
+.contact_methods {
+    display: flex;
+    justify-content: space-between;
+}
+
+#stadium {
+    text-align: center;
+}
+
+#stadium figure img {
+    width: 320px;
+    box-shadow: 0px 5px 5px 0px black;
+}
+
+.maps {
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+iframe {
+    width: auto;
+    height: auto;
+    margin-top: -10px;
+}
+
+form input,
+form button,
+.contact_methods p,
+.contact_methods h3 {
+    display: block;
+    margin-bottom: 8px;
+    padding: 8px;
+    width: 320px;
+}
+
+section h3 {
+    margin-bottom: 16px;
+}
+
+form button {
+    background-color: rgb(0,131,72);
+    color: white;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+}
+
+form button:hover {
+    background-color: rgb(0,131,72,0.9);
+    box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.5);
+
+}
+
+input:focus {
+    outline-color: rgb(0,131,72);
+}
+
+footer {
+    background-color: rgb(0,131,72);
+    color: white;
+    padding: 16px 0;
+}
+
+.custom_form input {
+    border-width: 0 0 1px 0;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#tickets {
+    margin-top: 100px;
+    bottom:0%;
+}
+
+#tickets img {
+    height: 170px;
+    opacity: 90%;
+    float: right;
+    margin-top: -40px;
+}
+
+#tickets a {
+    text-decoration: none;
+    color: rgb(0,131,72);
+}
+
+#tickets h3 {
+    font-size: 24px;
+}
+
+#tickets a:hover {
+    opacity: 80%;
+}
+
+nav a:hover {
+    text-decoration:underline;
+}
