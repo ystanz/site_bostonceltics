@@ -16,7 +16,7 @@
     <header>
         <div class="container">
             <div class="logo">
-            <img src="./assets/images/celtics_logo.png" alt="Logo oficial do Boston Celtics">
+            <img src="./assets/images/celtics_logo.png" alt="Logo oficial do Boston Celtics" title="Logo oficial do Boston Celtics">
             <h1>Boston Celtics</h1>
             </div>
             <nav>
@@ -29,82 +29,96 @@
             </nav>
         </div>
     </header>
-    <section>
-        <div class="container">
+    <section id="about">
+        <div class="container about">
+            <div class="about-imgs">
                 <img class="tatum_largando_a_braba" src="./assets/images/celtics_dunk.webp" alt="Jason Tatum enterrando a bola de basquete na cesta">
-            <div id="about">
-                <h2>Sobre o time</h2>
-                <p>O Boston Celtics é uma franquia de basquetebol filiada à National Basketball Association e situada na cidade de Boston, no estado americano de Massachusetts. Fundado em 6 de junho de 1946, é uma das únicas equipes que se mantém desde que foi criada. É conhecido mundialmente por obter 17 títulos da NBA, o que o deixa como o maior vencedor da história da liga junto ao Los Angeles Lakers.</p>
-                <p>Tanto o apelido de "Celtics" quanto o mascote "Lucky the Leprechaun" são uma homenagem à população irlandesa historicamente grande de Boston.</p>
-                <p>Apontada como uma das melhores equipes de basquetebol de todos os tempos, dominou de 1957 a 1969, quando conquistou 11 de 13 campeonatos, com destaque para o período de 1959-1966, quando foi campeã oito vezes consecutivas, escrita que permanece até os dias de hoje como a maior sequência de títulos da história do esporte dentro dos Estados Unidos.</p>
-                <p>Os Celtics possuem uma superioridade em finais (9-3) contra o seu maior rival, o Los Angeles Lakers. Durante toda a história da NBA, eles tiveram quatro jogadores premiados como o prêmio de MVP (Jogador mais valioso da temporada), são eles, Bill Russell, Bob Cousy, Dave Cowens e Larry Bird.</p>
                 <ul class="branchs_list">
                     <li><img src="./assets/images/nba_logo.png" alt="Logo da NBA"></li>
                     <li><img src="./assets/images/nike_logo.png" alt="Logo da Nike"></li>
                     <li><img src="./assets/images/celtics_logo2.png" alt="Logo alternativo do Boston Celtics"></li>
                 </ul>
             </div>
+            <article>
+                <h1>Sobre o time</h1>
+                <p>O Boston Celtics é uma franquia de basquetebol filiada à National Basketball Association e situada na cidade de Boston, no estado americano de Massachusetts. Fundado em 6 de junho de 1946, é uma das únicas equipes que se mantém desde que foi criada. É conhecido mundialmente por obter 17 títulos da NBA, o que o deixa como o maior vencedor da história da liga junto ao Los Angeles Lakers.</p>
+                <p>Tanto o apelido de "Celtics" quanto o mascote "Lucky the Leprechaun" são uma homenagem à população irlandesa historicamente grande de Boston.</p>
+                <p>Apontada como uma das melhores equipes de basquetebol de todos os tempos, dominou de 1957 a 1969, quando conquistou 11 de 13 campeonatos, com destaque para o período de 1959-1966, quando foi campeã oito vezes consecutivas, escrita que permanece até os dias de hoje como a maior sequência de títulos da história do esporte dentro dos Estados Unidos.</p>
+                <p>Os Celtics possuem uma superioridade em finais (9-3) contra o seu maior rival, o Los Angeles Lakers. Durante toda a história da NBA, eles tiveram quatro jogadores premiados como o prêmio de MVP (Jogador mais valioso da temporada), são eles, Bill Russell, Bob Cousy, Dave Cowens e Larry Bird.</p>
+            </article>
         </div>
     </section>
     <section id="contact">
-        <div class="container">
+        <div class="container contact">
+            <article id="green-club">
             <h1>Celtics Club Green Emails</h1>
-            <div class="contact_methods">
-                <div id="green_club">
-                    <p>Assine o <em><strong>Celtics Club Green</strong></em> para receber as últimas notícias do time, ofertas de ingressos, promoções de mercadorias e muito mais!</p>
-                    <form>
-                        <div class="custom_form">
+            <p>Assine o <em><strong>Celtics Club Green</strong></em> para receber as últimas notícias do time, ofertas de ingressos, promoções de mercadorias e muito mais!</p>
+                <form>
+                    <div class="form-custom">
                         <input type="text" placeholder="Seu nome" required>
                         <input type="email" placeholder="Seu e-mail" required>
-                        <input type="tel" placeholder="Seu telefone">
+                        <input type="tel" name="tel" id="tel" placeholder="Seu telefone">
                         <input type="text" placeholder="Jogador preferido">
                         <input type="text" placeholder="Time adversário preferido">
-                        </div>
-                        <p><b>Selecione quais categorias você deseja receber e-mails:</b></p>
-                        <div class="custom_checkbox">
-                            <label for="Novidades">Novidades</label>
-                            <input id="Novidades" type="checkbox">
-                            <label for="Ingressos">Ingressos</label>
-                            <input id="Ingressos" type="checkbox">
-                            <label for="Promoções">Promoções</label>
-                            <input id="Promoções" type="checkbox">
-                            <label for="Ofertas de parceiros">Ofertas de parceiros</label>
-                            <input id="Ofertas de parceiros" type="checkbox">
-                            <label for="Votação All-Star">Votação All-Star</label>
-                            <input id="Votação All-Star" type="checkbox">
-                        </div>
-                        <button type="submit">Enviar</button>
-                    </form>
-                </div>
+                    </div>
+                    <span class="greenclub-offers"><p>Selecione quais categorias você deseja receber e-mails:</p></span>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><label for="Novidades">Novidades</label></td>
+                                <td><input id="Novidades" type="checkbox"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="Ingressos">Ingressos</label></td>
+                                <td><input id="Ingressos" type="checkbox"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="Promoções">Promoções</label></td>
+                                <td><input id="Promoções" type="checkbox"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="Ofertas de parceiros">Ofertas de parceiros</label></td>
+                                <td><input id="Ofertas de parceiros" type="checkbox"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="Votação All-Star">Votação All-Star</label></td>
+                                <td><input id="Votação All-Star" type="checkbox"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button type="submit">Enviar</button>
+                </form>
+            </article>
+
+            <article id="stadium">
                 <div>
-                    <div id="stadium">
-                    <h3>Estádio do Celtics - TD Garden <small>(The Garden)</small></h3>
+                    <h1>Estádio do Celtics - TD Garden</h1>
+                    <p>(The Garden)</p>
                     <figure>
-                        <img src="./assets/images/the_garden.jpg" alt="Estádio do time Boston Celtics">
+                        <img src="./assets/images/the_garden.jpg" alt="Estádio do time Boston Celtics" title="Estádio The Garden do Boston Celtics">
                     </figure>
-                    </div>
-                    <div class="maps">
-                    <p>TD Garden, 100 Legends Way, Boston, MA 02114, Estados Unidos</p>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2947.8891344455647!2d-71.06472092459829!3d42.36620193471457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3708e162d05cb%3A0x32d335fe5ed797a8!2sTD%20Garden!5e0!3m2!1spt-BR!2sbr!4v1683733352867!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
                 </div>
-                <div>
-                    <div class="social_links">
-                    <h3>Nos acompanhe</h3>
-                    <ul>
-                        <li><a href="https://www.instagram.com/celtics/" title="Siga-nos no Instagram" target="_blank"><img src="./assets/images/instagram.png" alt="Logo do Instagram"></a></li>
-                        <li><a href="https://www.facebook.com/bostonceltics" title="Siga-nos no Facebook" target="_blank"><img src="./assets/images/facebook.png" alt="Logo do Facebook"></a></li>
-                        <li><a href="https://www.youtube.com/celtics" title="Visite nosso canal no Youtube"target="_blank"><img src="./assets/images/youtube.png" alt="Logo do Youtube"></a></li>
-                    </ul>
-                    </div>
-                    <div id="tickets">
-                        <a href="https://www.nba.com/celtics/schedule?page=individualTickets" target="_blank">
-                        <h3>Garanta seu lugar para os melhores confrontos desta temporada!</h3>
-                        <img src="./assets/images/paul_pierce.png">
-                        </a>
-                    </div>
-                </div>
+            <div class="stadium-address">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2947.8891344455647!2d-71.06472092459829!3d42.36620193471457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3708e162d05cb%3A0x32d335fe5ed797a8!2sTD%20Garden!5e0!3m2!1spt-BR!2sbr!4v1683733352867!5m2!1spt-BR!2sbr" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p>TD Garden, 100 Legends Way, Boston, MA 02114, Estados Unidos</p>
             </div>
+            </article>
+            <article class="social-links">
+                <div>
+                    <h1>Acompanhe o time nas redes</h1>
+                <ul>
+                    <li><a href="https://www.instagram.com/celtics/" title="Siga-nos no Instagram" target="_blank"><img src="./assets/images/instagram.png" alt="Logo do Instagram"></a></li>
+                    <li><a href="https://www.facebook.com/bostonceltics" title="Siga-nos no Facebook" target="_blank"><img src="./assets/images/facebook.png" alt="Logo do Facebook"></a></li>
+                    <li><a href="https://www.youtube.com/celtics" title="Visite nosso canal no Youtube"target="_blank"><img src="./assets/images/youtube.png" alt="Logo do Youtube"></a></li>
+                </ul>
+                </div>
+                <div id="tickets">
+                    <a href="https://www.nba.com/celtics/schedule?page=individualTickets" title="Acesse o site oficial e compre seu ingresso" target="_blank">
+                        <h1>Garanta seu lugar para os melhores confrontos desta temporada!</h1>
+                        <img src="./assets/images/paul_pierce.png" alt="Jogador do Boston Celtics, Paul Pierce">
+                    </a>
+                </div>
+            </article>
         </div>
     </section>
     <footer>
@@ -112,5 +126,9 @@
             <p>&copy; Boston Celtics</p>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="./assets/js/jquery.mask.min.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
