@@ -16,17 +16,30 @@
     <header>
         <div class="container">
             <div class="logo">
-            <img src="./assets/images/celtics_logo.png" alt="Logo oficial do Boston Celtics" title="Logo oficial do Boston Celtics">
-            <h1>Boston Celtics</h1>
+                <img src="./assets/images/celtics_logo.png" alt="Logo oficial do Boston Celtics" title="Logo oficial do Boston Celtics">
+                <h1>Boston Celtics</h1>
             </div>
             <nav>
+                <ul>
+                    <li><a href="#about">Sobre o time</a></li>
+                    <li><a href="#green_club">Green Club</a></li>
+                    <li><a href="#tickets">Tickets</a></li>
+                    <li><a href="#stadium">The Garden</a></li>
+                </ul>
+            </nav>
+            <div class="menu-hamburguer">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="menu">
             <ul>
                 <li><a href="#about">Sobre o time</a></li>
                 <li><a href="#green_club">Green Club</a></li>
                 <li><a href="#tickets">Tickets</a></li>
                 <li><a href="#stadium">The Garden</a></li>
             </ul>
-            </nav>
         </div>
     </header>
     <section id="about">
@@ -61,8 +74,10 @@
                         <input type="text" placeholder="Jogador preferido">
                         <input type="text" placeholder="Time adversário preferido">
                     </div>
-                    <span class="greenclub-offers"><p>Selecione quais categorias você deseja receber e-mails:</p></span>
-                    <table>
+                    <span class="greenclub-offers">
+                        <p>Selecione quais categorias você deseja receber e-mails:</p>
+                    </span>
+                    <table cellspacing="0">
                         <tbody>
                             <tr>
                                 <td><label for="Novidades">Novidades</label></td>
@@ -89,7 +104,7 @@
                     <button type="submit">Enviar</button>
                 </form>
             </article>
-
+                
             <article id="stadium">
                 <div>
                     <h1>Estádio do Celtics - TD Garden</h1>
@@ -103,8 +118,8 @@
                 <p>TD Garden, 100 Legends Way, Boston, MA 02114, Estados Unidos</p>
             </div>
             </article>
-            <article class="social-links">
-                <div>
+            <article class="links">
+                <div class="social-links">
                     <h1>Acompanhe o time nas redes</h1>
                 <ul>
                     <li><a href="https://www.instagram.com/celtics/" title="Siga-nos no Instagram" target="_blank"><img src="./assets/images/instagram.png" alt="Logo do Instagram"></a></li>
@@ -115,7 +130,7 @@
                 <div id="tickets">
                     <a href="https://www.nba.com/celtics/schedule?page=individualTickets" title="Acesse o site oficial e compre seu ingresso" target="_blank">
                         <h1>Garanta seu lugar para os melhores confrontos desta temporada!</h1>
-                        <img src="./assets/images/paul_pierce.png" alt="Jogador do Boston Celtics, Paul Pierce">
+                        <img href="#" src="./assets/images/paul_pierce.png" alt="Jogador do Boston Celtics, Paul Pierce">
                     </a>
                 </div>
             </article>

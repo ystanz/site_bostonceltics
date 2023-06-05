@@ -11,9 +11,13 @@ body {
 }
 
 header {
-    padding: 16px 0;
-    background-color: rgb(0,131,72);
+    padding-top: 16px;
+    background-color: rgb(1,95,53);
     color:white;
+}
+
+header > .container {
+    padding-bottom: 16px;
 }
 
 header h1,
@@ -112,6 +116,7 @@ article h1 {
 
 #green-club p {
     margin: 24px 0 12px;
+    font-size: 1rem;
 }
 
 .form-custom input{
@@ -124,6 +129,7 @@ article h1 {
 
 .form-custom input {
     border-width: 0 0 1px 0;
+    border-color: rgba(0, 131, 72, 0.7);
     background-color: rgba(255, 255, 255, 0.4);
 }
 
@@ -133,6 +139,16 @@ input:focus {
 
 .greenclub-offers {
     font-weight: bold;
+    font-size: 1rem;
+}
+
+#green-club table {
+    width: 100%;
+}
+
+#green-club table td {
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(0, 131, 72, 0.3);
 }
 
 form button {
@@ -184,29 +200,26 @@ iframe {
     font-size: .9rem;
 }
 
-.social-links {
+.links {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-between;
 }
-
-.social-links h1 {
+.links h1 {
     font-size: 1.4rem;
 }
 
-.social-links ul {
-    display: flex;
-    justify-content: center;
+.social-links {
+    text-align: center;
 }
 
-.social-links li {
+.social-links ul li {
     display: inline;
     margin-right: 12px;
     list-style: none;
 }
 
-.social-links img {
+.links img {
     height: 28px;
 }
 
@@ -230,7 +243,274 @@ iframe {
 }
 
 footer {
-    background-color: rgb(0,131,72);
+    background-color: rgb(1,95,53);
     color: white;
     padding: 30px 0;
+}
+
+.menu ul{
+    display: none;
+}
+
+.menu-hamburguer {
+    width: 32px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-hamburguer span {
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    display: block;
+    margin-bottom: 4px;
+}
+
+@media screen and (max-width: 640px) {
+    header {
+        padding-top: 12px;
+    }
+    header > .container {
+        padding-bottom: 8px;
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+    header img {
+        height: 50px;
+    }
+    .logo h1 {
+        margin-left: 10px;
+    }
+    
+    nav li {
+        display: none;
+    }
+    
+    .container { 
+        width: 95%;
+    }
+
+    .about { 
+        display: block;
+        margin: 46px auto;
+    }
+    
+    .about-imgs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .branchs_list img {
+        height: 25px;
+        margin: 14px 0;
+    }
+    
+    article h1 {
+        margin-bottom: 18px;
+        font-size: 1.8rem;
+    }
+
+    .contact {
+        display: block;
+    }
+    
+    #green-club {
+        margin: 72px auto;
+    }
+
+    #stadium {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 72px;
+    }
+    
+    #stadium figure {
+        margin-bottom: 36px ;
+    }
+    #stadium figure img {
+        width: 95%;
+    }
+    iframe {
+        width: auto;
+        height: auto;
+        margin-top: 36px;
+    }
+    .links ul {
+        margin-bottom: 36px;
+    }
+    .links h1 {
+        margin-top: 36px;
+    }
+    
+    #tickets {
+        margin-top: 36px;
+    }
+
+    #tickets h1 {
+        text-align: center;
+    }
+
+    #tickets img {
+        height: 190px;
+    }
+    
+    .menu-hamburguer {
+        width: 32px;
+        cursor: pointer;
+        display: block;
+        margin-right: 10px;
+    }
+    
+    .menu-hamburguer span {
+        height: 2px;
+        width: 100%;
+        background-color: #fff;
+        display: block;
+        margin-bottom: 4px;
+    }
+
+    .menu {
+        display: none;
+        margin-top: 10px;
+        background-color: rgba(0,131,72);
+        padding: 12px 0;
+    }
+    .menu ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    .menu li {
+        display: inline;
+        margin: 0 8px;
+    }
+    .menu li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    header {
+        padding-top: 12px;
+    }
+    header > .container {
+        padding-bottom: 8px;
+    }
+    header h1 {
+        font-size: 2.5rem;
+    }
+    header img {
+        height: 50px;
+    }
+    .logo h1 {
+        margin-left: 10px;
+    }
+    
+    nav li {
+        display: none;
+    }
+    
+    .container { 
+        width: 95%;
+    }
+
+    .about { 
+        display: block;
+        margin: 46px auto;
+    }
+    
+    .about-imgs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .branchs_list img {
+        height: 25px;
+        margin: 14px 0;
+    }
+    
+    article h1 {
+        margin-bottom: 18px;
+        font-size: 1.8rem;
+    }
+
+    .contact {
+        display: block;
+    }
+    
+    #green-club {
+        margin: 72px auto;
+    }
+
+    .links, 
+    #stadium {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        align-items: center;
+    }
+    
+    #stadium figure {
+        margin-bottom: 36px ;
+    }
+    #stadium figure img {
+        width: 90%;
+    }
+    iframe {
+        width: auto;
+        height: auto;
+        margin-top: 36px;
+    }
+    
+    #tickets {
+        margin-top: 36px;
+    }
+
+    #tickets h1 {
+        text-align: center;
+    }
+
+    #tickets img {
+        height: 190px;
+    }
+    
+    .menu-hamburguer {
+        width: 32px;
+        cursor: pointer;
+        display: block;
+        margin-right: 10px;
+    }
+    
+    .menu-hamburguer span {
+        height: 2px;
+        width: 100%;
+        background-color: #fff;
+        display: block;
+        margin-bottom: 4px;
+    }
+
+    .menu {
+        display: none;
+        margin-top: 10px;
+        background-color: rgba(0,131,72);
+        padding: 12px 0;
+    }
+    .menu ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    .menu li {
+        display: inline;
+        margin: 0 8px;
+    }
+    .menu li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.3rem;
+    }
 }
